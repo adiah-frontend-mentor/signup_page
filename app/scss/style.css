@@ -12,9 +12,91 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: #ff7a7a;
+  background-image: url("/images/bg-intro-mobile.png");
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  color: #fff;
+}
+
+.landing {
+  margin-top: 6.0625rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.text__heading {
+  font-size: 1.8125rem;
+}
+
+.text__body {
+  font-size: 1rem;
+}
+
+.form__heading {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 1.5625rem 3.25rem;
+  background-color: #6055a5;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form__heading span {
+  font-weight: 600;
+}
+
+.form__signup {
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 0;
+  border-radius: 11px;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form__signup input {
+  display: block;
+  width: 100%;
+  height: 3.4375rem;
+  margin-bottom: 1.0625rem;
+  padding: 1.375rem 1.1875rem;
+  border-radius: 5px;
+  border: 0.0625rem solid #b9b6d3;
+  color: #6055a5;
+  font-weight: 600;
+}
+
+.form__signup p {
+  margin: 0;
+  padding: 0 1.1875rem;
   color: #b9b6d3;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.form__signup p span {
+  color: #ff7a7a;
+}
+
+.form__button {
+  height: 3.4375rem;
+  margin-bottom: 1.0625rem;
+  border-radius: 5px;
+  background-color: #38cc8c;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
