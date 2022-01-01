@@ -6,3 +6,12 @@ html {
 *, *::before, *::after {
 	box-sizing: inherit;
 }
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: $font-med;
+	font-weight: 400;
+	color: $grayishBlue;
+}
