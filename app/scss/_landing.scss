@@ -2,23 +2,48 @@
 	margin-top: 6.0625rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+
+	@include breakpoint-up(large){
+		display: flex;
+		align-items: center;
+		padding: 7.5rem 2rem;
+	}
 }
 
 .text {
 	text-align: center;
 	margin-bottom: 4rem;
+	
+	@include breakpoint-up(large){
+		padding: 0 4.1875rem;
+		flex: 1;
+		text-align: left;
+	}
 
 	&__heading {
 		font-size: 1.8125rem;
+		@include breakpoint-up(large){
+			font-size: 3.25rem;
+			line-height: 1.125;
+		}
 	}
 
 	&__body {
 		font-size: $font-med;
+		@include breakpoint-up(large){
+			font-size: 1.125rem;
+		}
 	}
 }
 
 
 .form {
+
+	@include breakpoint-up(large){
+		padding: 0 4.1875rem 0 15px;
+		flex: 1;
+	}
+
 	&__heading {
 		display: inline-block;
 		margin-bottom: 1.5rem;
@@ -29,6 +54,9 @@
 		font-size: $font-med;
 		text-align: center;
 		box-shadow: $box-shadow;
+		width: 100%;
+
+		
 
 		span {
 			font-weight: 600;
@@ -67,6 +95,7 @@
 
 			span {
 				color: $red;
+				font-weight: 600;
 			}
 		}
 	}
@@ -80,5 +109,12 @@
 		color: $white;
 		font-size: 1rem;
 		border: none;
+		cursor: pointer;
+		box-shadow: $box-shadow;
+		transition: opacity 200ms ease-in-out;
+
+		&:hover {
+			opacity: 0.75;
+		}
 	}
 }
