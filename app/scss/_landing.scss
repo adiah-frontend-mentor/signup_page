@@ -7,6 +7,7 @@
 		display: flex;
 		align-items: center;
 		padding: 7.5rem 2rem;
+		margin-top: 5vh;
 	}
 }
 
@@ -39,6 +40,8 @@
 
 .form {
 
+	margin-bottom: 4.1875rem;
+
 	@include breakpoint-up(large){
 		padding: 0 4.1875rem 0 15px;
 		flex: 1;
@@ -70,20 +73,59 @@
 		border-radius: 11px;
 		box-shadow: $box-shadow;
 
-		input {
-			display: block;
-			width: 100%;
-			height: 3.4375rem;
-			margin-bottom: 1.0625rem;
-			padding: 1.375rem 1.1875rem;
-			border-radius: 5px;
-			border: 0.0625rem solid $grayishBlue;
-			color: $blue;
-			font-weight: 600;
 
-			// &:not(:last-child) {
-			// 	margin-bottom: ;
-			// }
+		.input-control {
+			display: flex;
+			flex-direction: column;
+
+
+			input {
+				display: block;
+				width: 100%;
+				height: 3.4375rem;
+				// margin-bottom: 1.0625rem;
+				padding: 1.375rem 1.1875rem;
+				border-radius: 5px;
+				border: 0.0625rem solid $grayishBlue;
+				color: $blue;
+				font-weight: 600;
+				background-color: $white;
+
+				// &:not(:last-child) {
+				// 	margin-bottom: ;
+				// }
+
+				// styles for invalid inputs
+				// &:invalid {
+				// 	border-color: #900;
+				// 	background-color: #fdd;
+				// }
+
+				// &:focus:invalid {
+				// 	outline: none;
+				// }
+			}
+
+			.error {
+				color: $red;
+				text-align: right;
+				font-size: $font-sm;
+				// height: 13px;
+				margin-top: 1.0625rem;
+				margin-bottom: 1.0625rem;
+				// visibility: hidden;
+			}
+		}
+
+		.error {
+			input {
+				border: 0.1875rem solid $red;
+				color: $red;
+				background-image: url("../../images/icon-error.svg");
+				background-repeat: no-repeat;
+				background-position: right 1rem center;
+				background-size: auto;
+			}
 		}
 
 		p {
@@ -118,3 +160,22 @@
 		}
 	}
 }
+
+// styles for errors in forms
+
+// .error {
+// 	width: 100%;
+// 	padding: 0;
+
+// 	font-size: 80%;
+// 	color: white;
+// 	background-color: #900;
+// 	border-radius: 0 0 5px 5px;
+
+// 	box-sizing: border-box;
+
+// 	.active {
+// 		padding: 0.3em;
+// 	}
+// }
+
