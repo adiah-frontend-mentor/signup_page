@@ -1,4 +1,5 @@
-.landing {
+// page wrapper div
+.page-container {
 	margin-top: 6.0625rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -11,6 +12,7 @@
 	}
 }
 
+// Text div
 .text {
 	text-align: center;
 	margin-bottom: 4rem;
@@ -38,6 +40,8 @@
 }
 
 
+// Form wrapper
+
 .form {
 
 	margin-bottom: 4.1875rem;
@@ -47,6 +51,7 @@
 		flex: 1;
 	}
 
+	// Form button type header
 	&__heading {
 		display: inline-block;
 		margin-bottom: 1.5rem;
@@ -60,12 +65,13 @@
 		width: 100%;
 
 		
-
+		// Bold in the heading
 		span {
 			font-weight: 600;
 		}
 	}
 
+	// Actual form 
 	&__signup {
 		padding: 1.5rem;
 		background-color: $white;
@@ -74,10 +80,10 @@
 		box-shadow: $box-shadow;
 
 
+		// Wrapper for each input in the form
 		.input-control {
 			display: flex;
 			flex-direction: column;
-
 
 			input {
 				display: block;
@@ -92,6 +98,7 @@
 				background-color: $white;
 			}
 
+			// Error messages for each input
 			.error {
 				color: $red;
 				text-align: right;
@@ -101,6 +108,7 @@
 			}
 		}
 
+		// For when the input controls have error classes
 		.error {
 			input {
 				border: 0.1875rem solid $red;
@@ -112,6 +120,7 @@
 			}
 		}
 
+		// Footer of the form
 		p {
 			margin: 0;
 			padding: 0 1.1875rem;

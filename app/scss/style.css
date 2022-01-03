@@ -20,14 +20,14 @@ body {
   color: #fff;
 }
 
-.landing {
+.page-container {
   margin-top: 6.0625rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
 @media (min-width: 64em) {
-  .landing {
+  .page-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
