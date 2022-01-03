@@ -25,9 +25,7 @@ const setError = (element, message) => {
 }
 
 const clearError = element => {
-	// get the parent div of the input element
 	const inputControl = element.parentElement;
-	// get the error div of the input control
 	const errorDisplay = inputControl.querySelector('.error');
 
 	errorDisplay.innerText = '';
@@ -52,10 +50,8 @@ const validateInputs = () => {
 
 	// email validations:
 	if(email.validity.valueMissing){
-		// if the field is empty
 		setError(email, 'Email cannot be empty');
 	} else if(email.validity.typeMismatch){
-		// if the field doesn't contain an email address
 		email.value = "email@example/com";
 		setError(email, 'Looks like this is not an email');
 	} else {

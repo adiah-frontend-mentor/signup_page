@@ -90,30 +90,14 @@
 				color: $blue;
 				font-weight: 600;
 				background-color: $white;
-
-				// &:not(:last-child) {
-				// 	margin-bottom: ;
-				// }
-
-				// styles for invalid inputs
-				// &:invalid {
-				// 	border-color: #900;
-				// 	background-color: #fdd;
-				// }
-
-				// &:focus:invalid {
-				// 	outline: none;
-				// }
 			}
 
 			.error {
 				color: $red;
 				text-align: right;
 				font-size: $font-sm;
-				// height: 13px;
 				margin-top: 1.0625rem;
 				margin-bottom: 1.0625rem;
-				// visibility: hidden;
 			}
 		}
 
@@ -160,22 +144,3 @@
 		}
 	}
 }
-
-// styles for errors in forms
-
-// .error {
-// 	width: 100%;
-// 	padding: 0;
-
-// 	font-size: 80%;
-// 	color: white;
-// 	background-color: #900;
-// 	border-radius: 0 0 5px 5px;
-
-// 	box-sizing: border-box;
-
-// 	.active {
-// 		padding: 0.3em;
-// 	}
-// }
-
