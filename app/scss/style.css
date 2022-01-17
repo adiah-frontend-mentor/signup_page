@@ -13,11 +13,17 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ff7a7a;
-  background-image: url("/images/bg-intro-mobile.png");
+  background-image: url("../../images/bg-intro-mobile.png");
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
+}
+
+@media (min-width: 64em) {
+  body {
+    background-image: url("../../images/bg-intro-desktop.png");
+  }
 }
 
 .page-container {
